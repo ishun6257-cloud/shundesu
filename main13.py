@@ -12,6 +12,7 @@ import threading
 import traceback
 import time
 import requests
+import functools as _ft
 from datetime import timedelta
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
