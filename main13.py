@@ -5444,4 +5444,9 @@ if __name__ == "__main__":
     print("=" * 50)
     print("にゃんこ代行ツール - Personal Web")
     print("=" * 50)
-    app.run(debug=False, host=os.getenv("HOST", "127.0.0.1"), port=int(os.getenv("PORT", "1142")), threaded=True)
+
+    app.run(
+        debug=False,
+        host="0.0.0.0",
+        port=int(os.environ.get("PORT", 10000))
+    )
